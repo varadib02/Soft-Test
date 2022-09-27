@@ -1,55 +1,121 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  </head>
-  <body>
-    <div>
-        <!--navbar-->
-        <nav class="navbar navbar-dark bg-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand mb-0 h1 text-light">Test</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu bg-dark">
-                      <li><a class="dropdown-item text-light" href="#">Action</a></li>
-                      <li><a class="dropdown-item text-light" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item text-light" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled text-light">???</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-          </nav>
-          <div>
-            <h1>Lorem</h1> 
-            <p>ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <p>Dolorem suscipit vitae magni.</p>
-            <p>Expedita quibusdam, incidunt similique doloribus quia natus, officiis iure eius, obcaecati rerum placeat aperiam nostrum praesentium delectus nulla.</p>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meat author="Tóth Milán & Váradi Barnabás">
+    <title>Desszert</title>
+
+    <!--  Erőforások  (Bootstrap 3)-->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <!--  navbar -->
+
+  <div class="container">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#">Édességek</a>
         </div>
+        <div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#deszertek">Desszert</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <!--content-->
+    <h1>Desszert</h1>
+    <h2>Története</h2>
+    <p>A desszert egy étkezési fogás, amely általában édes ételekből, például édességekből, desszertborból vagy likőrből áll. Az Egyesült Államokban azonban tartalmazhat kávét, sajtokat, dióféléket vagy más sós ételeket. De Közép- és Nyugat-Afrika, valamint Kína nagy részén nincs hagyománya az étkezés befejezésére szolgáló desszertnek.</p>
+    <h3>A desszert kifejezés...</h3>
+    <p class="szöveg">A desszert kifejezés sokféle édességre vonatkozhat, például kekszekre, tortákra, süteményekre, pudingokra,
+      zselatinokra, fagylaltokra, süteményekre, pitékre, pudingokra, édes levesekre és tortákra. A gyümölcs általában
+      megtalálható a desszert között, természetesen előforduló édessége miatt. Egyes kultúrák olyan összetevőkkel
+      édesítik, amelyek ízfokozóak.</p>
+    <h3 id="deszertek">Van kedved el készíteni párat ?</h3>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="thumbnail text-center">
+          <a href="https://www.mindmegette.hu/glutenmentes-somloi-torta.recept/" target="_blank">
+            <img src="https://www.mindmegette.hu/images/351/L/lead_L_torta_1.jpg"
+              style="width:100%">
+            <div class="caption">
+              <p class="text">GLUTÉNMENTES SOMLÓI TORTA</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="thumbnail text-center">
+          <a href="https://www.mindmegette.hu/isler-glutenmentes-tejmentes-tojasmentes.recept/">
+            <img src="https://www.mindmegette.hu/images/331/L/lead_L_img_0434.jpg" style="width:100%">
+            <div class="caption">
+              <p class="text">ISLER (GLUTÉN-, TEJ-, ÉS TOJÁSMENTES)</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="thumbnail text-center">
+          <a href="https://www.mindmegette.hu/glutenmentes-csokis-muffin.recept/">
+            <img src="https://www.mindmegette.hu/images/351/L/lead_L_muffin_1.jpg" style="width:100%" target="_blank">
+            <div class="caption">
+              <p class="text">GLUTÉNMENTES CSOKIS MUFFIN</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="thumbnail text-center">
+          <a href="https://www.mindmegette.hu/glutenmentes-csokis-muffin.recept/">
+            <img src="https://www.mindmegette.hu/images/343/L/lead_L_trifle_2.jpg"  style="width:100%" target="_blank">
+            <div class="caption">
+              <p class="text">TRIFLE NYÁRI GYÜMÖLCSÖKKEL</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="thumbnail text-center">
+          <a href="https://www.mindmegette.hu/gyors-amerikai-palacsinta.recept/">
+            <img src="https://www.mindmegette.hu/images/339/L/lead_L_shutterstock_1921676540-(1).jpg"  style="width:100%" target="_blank">
+            <div class="caption">
+              <p class="text">GYORS AMERIKAI PALACSINTA</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-  </body>
+  </div>
+</body>
+
 </html>
